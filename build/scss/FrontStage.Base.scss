@@ -1,0 +1,538 @@
+/* CSS重設 開始*/
+// 參考: meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
+// 參考 css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+//http://meyerweb.com/eric/tools/css/reset/
+//v2.0 | 20110126
+//License: none (public domain)
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/* CSS重設 結束*/
+
+/* 網站基本設定 開始*/
+@-ms-viewport {
+  width: device-width;
+}
+html {
+  height: 100%;
+  font-size: 16px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Microsoft JhengHei, "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+a {
+  color: $custom-text-dark;
+  text-decoration: none;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: 0 none;
+  text-decoration: none;
+  color: $custom-button-primary;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+b {
+  font-weight: 400;
+}
+
+blockquote p {
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+input,
+select {
+  &.form-select {
+    line-height: 1.8;
+  }
+
+  &.form-control {
+    line-height: 1.8;
+  }
+}
+
+input[type="date"] {
+  //手機板使用要另外設定
+  //-webkit-appearance: none; //iphone
+  appearance: none;
+  height: 33.19px; //iphone
+}
+
+input[type="datetime-local"] {
+  //手機板使用要另外設定
+  //-webkit-appearance: none; //iphone
+  appearance: none;
+  height: 33.19px; //iphone
+}
+
+select {
+  background: white; //手機板使用要另外設定
+  color: black; //手機板使用要另外設定
+}
+
+input:disabled {
+  background: #e9ecef !important;
+  color: #6c757d !important;
+}
+
+select:disabled {
+  background: #e9ecef !important;
+  color: #6c757d !important;
+}
+
+input:read-only {
+  background: #e9ecef !important;
+  color: #6c757d !important;
+}
+
+::-webkit-scrollbar {
+  //滾動軸
+  width: 6px;
+  height: 6px;
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  //滾動軸
+  border-radius: 10px;
+  background: #bbb9b4;
+}
+/* 網站基本設定 結束*/
+
+/* 類 bootstrap 設定*/
+body {
+  .fs-7 {
+    font-size: 0.8rem;
+  }
+
+  .text-blue {
+    color: #0d6efd;
+  }
+
+  .text-indigo {
+    color: #6610f2;
+  }
+
+  .text-purple {
+    color: #6f42c1;
+  }
+
+  .text-pink {
+    color: #d63384;
+  }
+
+  .text-red {
+    color: #dc3545;
+  }
+
+  .text-orange {
+    color: #fd7e14;
+  }
+
+  .text-yellow {
+    color: #ffc107;
+  }
+
+  .text-green {
+    color: #198754;
+  }
+
+  .text-teal {
+    color: #20c997;
+  }
+
+  .text-cyan {
+    color: #0dcaf0;
+  }
+
+  .text-black {
+    color: #000;
+  }
+
+  .text-white {
+    color: #fff;
+  }
+
+  .text-gray {
+    color: #6c757d;
+  }
+
+  .text-gray-dark {
+    color: #343a40;
+  }
+
+  .text-gray-100 {
+    color: #f8f9fa;
+  }
+
+  .text-gray-200 {
+    color: #e9ecef;
+  }
+
+  .text-gray-300 {
+    color: #dee2e6;
+  }
+
+  .text-gray-400 {
+    color: #ced4da;
+  }
+
+  .text-gray-500 {
+    color: #adb5bd;
+  }
+
+  .text-gray-600 {
+    color: #6c757d;
+  }
+
+  .text-gray-700 {
+    color: #495057;
+  }
+
+  .text-gray-800 {
+    color: #343a40;
+  }
+
+  .text-gray-900 {
+    color: #212529;
+  }
+
+  .bg-gray {
+    background: #6c757d;
+  }
+
+  .bg-gray-dark {
+    background: #343a40;
+  }
+
+  .bg-gray-100 {
+    background: #f8f9fa;
+  }
+
+  .bg-gray-200 {
+    background: #e9ecef;
+  }
+
+  .bg-gray-300 {
+    background: #dee2e6;
+  }
+
+  .bg-gray-400 {
+    background: #ced4da;
+  }
+
+  .bg-gray-500 {
+    background: #adb5bd;
+  }
+
+  .bg-gray-600 {
+    background: #6c757d;
+  }
+
+  .bg-gray-700 {
+    background: #495057;
+  }
+
+  .bg-gray-800 {
+    background: #343a40;
+  }
+
+  .bg-gray-900 {
+    background: #212529;
+  }
+
+  .order-6 {
+    order: 6;
+  }
+
+  .order-7 {
+    order: 7;
+  }
+
+  .order-8 {
+    order: 8;
+  }
+
+  .order-9 {
+    order: 9;
+  }
+
+  .order-10 {
+    order: 10;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .order-sm-6 {
+      order: 6 !important;
+    }
+
+    .order-sm-7 {
+      order: 7 !important;
+    }
+
+    .order-sm-8 {
+      order: 8 !important;
+    }
+
+    .order-sm-9 {
+      order: 9 !important;
+    }
+
+    .order-sm-10 {
+      order: 10 !important;
+    }
+  }
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .order-md-6 {
+      order: 6 !important;
+    }
+
+    .order-md-7 {
+      order: 7 !important;
+    }
+
+    .order-md-8 {
+      order: 8 !important;
+    }
+
+    .order-md-9 {
+      order: 9 !important;
+    }
+
+    .order-md-10 {
+      order: 10 !important;
+    }
+  }
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .order-lg-6 {
+      order: 6 !important;
+    }
+
+    .order-lg-7 {
+      order: 7 !important;
+    }
+
+    .order-lg-8 {
+      order: 8 !important;
+    }
+
+    .order-lg-9 {
+      order: 9 !important;
+    }
+
+    .order-lg-10 {
+      order: 10 !important;
+    }
+  }
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .order-xl-6 {
+      order: 6 !important;
+    }
+
+    .order-xl-7 {
+      order: 7 !important;
+    }
+
+    .order-xl-8 {
+      order: 8 !important;
+    }
+
+    .order-xl-9 {
+      order: 9 !important;
+    }
+
+    .order-xl-10 {
+      order: 10 !important;
+    }
+  }
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .order-xxl-6 {
+      order: 6 !important;
+    }
+
+    .order-xxl-7 {
+      order: 7 !important;
+    }
+
+    .order-xxl-8 {
+      order: 8 !important;
+    }
+
+    .order-xxl-9 {
+      order: 9 !important;
+    }
+
+    .order-xxl-10 {
+      order: 10 !important;
+    }
+  }
+}

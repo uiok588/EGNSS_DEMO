@@ -1,0 +1,370 @@
+// 效果延遲
+body {
+  .btn {
+    transition: 0.3s all;
+  }
+}
+
+// 共用設定
+body {
+  min-height: 100vh;
+  background: #f4f2ec;
+
+  p {
+    text-align: justify;
+    line-height: 2;
+
+    &.text-indent-2 {
+      text-indent: 2em;
+    }
+  }
+
+  :focus {
+    outline: 2px dashed $custom-secondary !important;
+  }
+
+  .targetArea {
+    letter-spacing: -0.03rem;
+    font-weight: 600;
+  }
+
+  table {
+    &.tbStyle_01 {
+      th {
+        font-weight: 800;
+        border-bottom: 2px solid #ddd;
+        background: none !important;
+      }
+
+      th,
+      td {
+        padding: 10px 15px;
+      }
+
+      tr {
+        border-bottom: 1px dashed #ddd;
+      }
+
+      tbody {
+        :first-child {
+          background: none !important;
+        }
+
+        :hover {
+          background: rgb(231, 242, 247);
+        }
+      }
+    }
+
+    &.tbStyle_02 {
+      border-collapse: separate;
+      border-spacing: 0;
+      border: 2px #e9ecef;
+
+      tr th:first-child,
+      tr td:first-child {
+        /*設定table左邊邊框*/
+        border-left: 2px solid #e9ecef;
+      }
+      tr th:last-child,
+      tr td:last-child {
+        /*設定table右邊邊框*/
+        border-right: 2px solid #e9ecef;
+      }
+      tr td:first-child,
+      tr td:nth-child(2),
+      tr td:nth-child(3),
+      tr td:last-child {
+        /*設定table表格每列底部邊框*/
+        border-bottom: 2px solid #e9ecef;
+      }
+      // tr:last-child td:first-child,
+      // tr:last-child td:nth-child(2),
+      // tr:last-child td:nth-child(3),
+      // tr:last-child td:last-child {
+      //   //設定table表格最後一列底部邊框
+      //   border-bottom: 2px solid #000;
+      // }
+      tr th {
+        background: #e9ecef;
+      }
+      tr:first-child th:first-child {
+        border-top-left-radius: 0.3rem;
+      }
+      tr:first-child th:last-child {
+        border-top-right-radius: 0.3rem;
+      }
+      tr:last-child td:first-child {
+        border-bottom-left-radius: 0.3rem;
+      }
+      tr:last-child td:last-child {
+        border-bottom-right-radius: 0.3rem;
+      }
+
+      th,
+      td {
+        padding: 10px 15px;
+      }
+
+      th {
+        font-weight: 800;
+      }
+    }
+
+    &.tbStyle_03 {
+      th {
+        font-weight: 800;
+        background: rgb(231, 242, 247);
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px 15px;
+        vertical-align: middle;
+
+        a {
+          color: $custom-button-primary;
+        }
+      }
+    }
+  }
+  // table頁碼
+  .pageControl {
+    #btnPrePage,
+    #btnNextPage,
+    #btnReturn {
+      background: rgb(231, 242, 247) !important;
+      margin: 0 1rem;
+      border: 1px solid #ddd;
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.2rem;
+
+      :disabled,
+      :read-only {
+        background: red !important;
+      }
+
+      :hover {
+        background: $custom-primary !important;
+        color: $custom-text-light;
+      }
+    }
+
+    span {
+      margin: 0 0.3rem;
+    }
+
+    #currentPage {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border-radius: 0.2rem;
+    border: 0;
+    border-bottom: 1.8px solid #2881a5;
+    background: rgb(231, 242, 247);
+    padding: 0.2rem 0.5rem;
+
+    &:focus,
+    &:active,
+    &:target {
+      border-bottom: 2px solid #0188cf;
+    }
+
+    &:read-only {
+      background: #ced4da !important;
+    }
+
+    &:disabled {
+      background: none !important;
+      border: none !important;
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
+
+  label {
+    font-size: 0.9rem;
+
+    &.requiredLabel::after {
+      content: "*";
+      color: $custom-button-danger-hover;
+      font-size: 1.2rem;
+    }
+  }
+
+  i {
+    &.eyeSwitch {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 各區塊
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .targetArea {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.5rem;
+  }
+
+  .logoDiv {
+    img {
+      height: 70px;
+      font-weight: bold;
+    }
+  }
+  .menuDiv {
+    .btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+
+      img {
+        height: 35px;
+        margin: 0.2rem 0;
+
+        &.smImg {
+          padding: 0.1rem;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  color: $custom-text-light;
+  background-color: #4f4935;
+  line-height: 1.8;
+
+  .targetArea {
+    position: absolute;
+    top: 0.1rem;
+    left: 0.5rem;
+  }
+
+  .counter {
+    border-bottom: 1px solid $custom-text-light;
+
+    div {
+      margin-right: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  a {
+    color: $custom-text-light !important;
+  }
+
+  .textDiv {
+    span {
+      display: block;
+      width: max-content;
+      line-height: 0.1;
+    }
+  }
+}
+
+#main {
+  width: 100%;
+
+  .contentDiv {
+    background: white;
+    border-top: 10px solid $custom-primary;
+
+    .titleText {
+      color: $custom-primary;
+    }
+  }
+}
+
+// 各頁面設定
+#hotnews {
+  .tableNews {
+    th {
+      font-weight: 800;
+      border-bottom: 2px solid #ddd;
+      background: none !important;
+    }
+
+    th,
+    td {
+      padding: 10px 15px;
+    }
+
+    tr {
+      border-bottom: 1px dashed #ddd;
+    }
+
+    tbody {
+      :first-child {
+        background: none !important;
+      }
+
+      :hover {
+        background: rgb(231, 242, 247);
+      }
+    }
+  }
+
+  .pageControl {
+    #btnPrePage,
+    #btnNextPage,
+    #btnReturn {
+      background: rgb(231, 242, 247) !important;
+      margin: 0 1rem;
+      border: 1px solid #ddd;
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.2rem;
+
+      :disabled,
+      :read-only {
+        background: red !important;
+      }
+
+      :hover {
+        background: $custom-primary !important;
+        color: $custom-text-light;
+      }
+    }
+
+    span {
+      margin: 0 0.3rem;
+    }
+
+    #currentPage {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+  }
+}
+
+#content02 {
+  h3 {
+    padding-left: 12px;
+  }
+  ul {
+    list-style: disc;
+  }
+}
+
+#qanda {
+  .collapse {
+    background: rgb(231, 242, 247);
+  }
+}

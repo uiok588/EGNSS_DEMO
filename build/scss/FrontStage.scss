@@ -1,0 +1,17 @@
+//客製化：顏色控管
+@import "FrontStage.Color.scss";
+
+//模板：網頁基本設定。
+@import "FrontStage.Base.scss";
+
+//模板：導覽列。
+@import "FrontStage.Navbar.scss";
+
+//模板：頁面設計。
+@import "FrontStage.Body.scss";
+
+//客製化：針對各項專案內容進行調整。
+@import "FrontStage.custom.scss";
+
+//客製化RWD：針對各項專案內容進行RWD調整。
+@import "FrontStage.customRWD.scss";

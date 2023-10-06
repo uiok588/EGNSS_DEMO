@@ -1,0 +1,52 @@
+@media (max-width: 1199.98px) {
+  #header .logoDiv img {
+    height: 60px;
+  }
+  #header .menuDiv .btn {
+    padding: 0.2rem 0.3rem;
+    height: 80px;
+    width: 80px;
+  }
+  #header .menuDiv .btn img {
+    height: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  body .targetArea {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+@media (max-width: 575.98px) {
+  #header .headerTop {
+    background: #666666;
+    color: #f8f9fa;
+  }
+  #header .headerTop p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+  #header .logoDiv__js.disappear {
+    display: none !important;
+  }
+  #header .logoDiv h2 {
+    font-size: 1.3rem;
+  }
+  #header .menuDiv {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  #header .menuDiv::-webkit-scrollbar {
+    background: #e9ecef;
+  }
+  #header .menuDiv::-webkit-scrollbar-thumb {
+    background: #ced4da;
+  }
+  #header .menuDiv .btn {
+    min-height: 50px;
+    min-width: 76px;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=FrontStage.customRWD.css.map */

@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script src="shared/head.js"></script>
+
+    <div id="myElement" data-my-custom-attribute="my custom value"></div>
+
+    <!-- 開始導入 共用javascript -->
+    <script src="shared/javascript.js"></script>
+    <!-- 結束導入 共用javascript -->
+
+    <script>
+
+      var myElement = $('#myElement');
+      var myCustomAttributeValue = myElement.data('my-custom-attribute');
+      console.log(myCustomAttributeValue);
+      console.log($('#myElement').attr('data-my-custom-attribute'))
+
+    </script>
+  </body>
+</html>

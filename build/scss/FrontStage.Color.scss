@@ -1,0 +1,81 @@
+/*----------SCSS 顏色基本變數----------*/
+$color-primary: #1d3557;
+$color-secondary: #457b9d;
+$color-tertiary: #a8dadc;
+$color-light: #f1faee;
+$color-danger: #e63946;
+$color-white: #fff;
+$color-black: #000;
+
+/*----------SCSS 顏色內建設定----------*/
+//字體顏色：深色要接近黑色，淺色要接近白色
+$custom-text-dark: #000; //黑
+$custom-text-light: #fff; //白
+//網頁色系
+//主色：網頁模板底色為淺色，建議要以較深色為主。
+//次要色：建議為主色對比色。
+//第三色：建議為中性色，藍色或綠色。
+//顏色都可以自行增加變數至專案中。
+//色票參考網站：https://coolors.co/palettes/trending
+$custom-primary: #272930; //深灰
+$custom-primary-dark: #23252a;
+$custom-primary-darker: #1a1c20;
+$custom-primary-light: #2a2c31;
+$custom-primary-lighter: #272930;
+$custom-secondary: #ffab1e; //橘
+$custom-secondary-dark: #cd853f;
+$custom-thrid: #2083d6; //藍
+//按鈕顏色：跳色，且顏色飽和度高。
+$custom-button-danger: #dc3545; //危險:紅
+$custom-button-danger-hover: #dc3545;
+$custom-button-warning: #fd7e14; //警告：橘
+$custom-button-warning-hover: #fd7e14;
+$custom-button-notice: #ffc107; //注意：橙
+$custom-button-notice-hover: #ffc107;
+$custom-button-primary: #90e0ef; //普通：藍
+$custom-button-primary-hover: #0d6efd;
+$custom-button-secondary: #495057; //很普通：深灰
+$custom-button-secondary-hover: #495057;
+$custom-button-thrid: #e9ecef; //超級普通：淺灰
+$custom-button-thrid-hover: #e9ecef;
+$custom-button-unimportant: #e9ecef; //超級普通：灰
+$custom-button-unimportant-hover: #e9ecef;
+$custom-button-success: #198754; //成功：綠
+$custom-button-success-hover: #198754;
+$custom-button-special: #0dcaf0; //特殊：青
+$custom-button-special-hover: #0dcaf0;
+$custom-button-default: none; //無顏色
+$custom-button-default-hover: $custom-button-thrid; //無顏色
+
+/*----------SCSS 顏色客製化----------*/
+//字體顏色
+$custom-text-dark: #666666; //深灰
+$custom-text-light: #f8f9fa; //淡灰
+//網頁色系
+$custom-primary: #2881a5; //深藍
+$custom-primary-dark: #223f4a;
+$custom-primary-darker: #1c333c;
+$custom-primary-light: #307265;
+$custom-primary-lighter: #366b81;
+$custom-secondary: #ffda82; //淺橙
+$custom-secondary-dark: #e9c46a;
+$custom-thrid: #f4a261; //橘
+//按鈕顏色
+$custom-button-danger: #d93d4c; //危險:紅
+$custom-button-danger-hover: #b32331;
+$custom-button-warning: #b65200; //警告：橘
+$custom-button-warning-hover: #e76e0a;
+$custom-button-notice: #ffc107; //注意：橙
+$custom-button-notice-hover: #ebb000;
+$custom-button-primary: #10759d; //普通：藍
+$custom-button-primary-hover: #0396e3;
+$custom-button-secondary: #495057; //很普通：深灰
+$custom-button-secondary-hover: #6e7781;
+$custom-button-thrid: #e9ecef; //超級普通：淺灰
+$custom-button-thrid-hover: #dee2e6;
+$custom-button-unimportant: white; //超級普通：灰
+$custom-button-unimportant-hover: #e9ecef;
+$custom-button-success: #307265; //成功：綠
+$custom-button-success-hover: #14975c;
+$custom-button-special: #09c1c1; //特殊：湖水
+$custom-button-special-hover: #03a1a1;

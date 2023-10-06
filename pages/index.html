@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 開始導入 共用head -->
+  <script src="shared/head.js"></script>
+  <!-- 結束導入 共用head -->
+
+  <body class="d-flex flex-column position-relative">
+    <!-- 開始導入 共用 header -->
+    <script src="shared/header.js"></script>
+    <!-- 結束導入 共用 header -->
+
+    <main id="main" class="container d-flex flex-grow-1 py-5">
+      <!-- 開始導入 共用 navbar -->
+      <script src="shared/navbar.js"></script>
+      <!-- 結束導入 共用 navbar -->
+
+      <div class="d-flex col-12 col-xl-9 ps-xl-3">
+        <div id="hotnews" class="contentDiv col-12 rounded rounded-1 shadow-sm">
+          <!-- 開始導入 共用 carousel-->
+          <script src="shared/carousel.js"></script>
+          <!-- 結束導入 共用 carousel-->
+          <a
+            id="hotnewsArea"
+            title="中央內容區塊"
+            accesskey="C"
+            href="#hotnewsArea"
+            class="targetArea ms-3"
+          >
+            :::
+          </a>
+          <h2 class="titleText col-12 text-center mt-3 mb-4">最新消息</h2>
+          <!-- 開始 表格-->
+          <div class="m-3 mb-5">
+            <!-- 表 -->
+            <table id="tbNewsList" class="tableNews tbStyle_01 col-12">
+              <tbody>
+                <tr>
+                  <th>公告日期</th>
+                  <th>標題</th>
+                </tr>
+                <tr
+                  class="tr_Row2"
+                  onmouseover="this.className='tr_RowOver2'"
+                  onmouseout="this.className='tr_Row2'"
+                >
+                  <td>2022/12/09</td>
+                  <td>
+                    <span id="20221209095916858" name="newsTitle">
+                      <img src="_img/hot_3.gif" alt="HOT" />
+                      近期發現系統RTK服務偶有北斗訊號無法加入解算狀況，已洽原廠討論中。
+                    </span>
+                  </td>
+                </tr>
+                <tr
+                  class="tr_Row"
+                  onmouseover="this.className='tr_RowOver'"
+                  onmouseout="this.className='tr_Row'"
+                >
+                  <td>2021/07/19</td>
+                  <td>
+                    <span id="20210719170616183" name="newsTitle">
+                      <img src="_img/hot_3.gif" alt="HOT" />
+                      e-GNSS即時動態定位衛星定位儀校正－收件注意事項
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 頁碼 -->
+            <div
+              id="ctl00_cphBody_pageControl"
+              class="pageControl col-12 d-flex justify-content-center align-items-center mt-3"
+            >
+              <input id="btnPrePage" type="button" value="上一頁" disabled="" />
+              <span id="currentPage">1</span>/<span id="totalPage">23</span>
+              <input id="btnNextPage" type="button" value="下一頁" />
+            </div>
+          </div>
+          <!-- 結束 表格-->
+        </div>
+      </div>
+    </main>
+
+    <!-- 開始導入 共用 footer -->
+    <script src="shared/footer.js"></script>
+    <!-- 結束導入 共用 footer -->
+
+    <!-- 開始導入 共用javascript -->
+    <script src="shared/javascript.js"></script>
+    <!-- 結束導入 共用javascript -->
+  </body>
+</html>
+

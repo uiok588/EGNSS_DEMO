@@ -1,0 +1,139 @@
+#navbar {
+  background: white;
+  border-top: 10px solid $custom-button-success;
+  display: block;
+
+  .targetArea {
+    margin-left: 20px;
+  }
+
+  nav {
+    $custom-button-success-opacity: #30726514;
+    ul {
+      padding: 0;
+
+      > li > button {
+        border-bottom: 1px solid $custom-button-success-opacity;
+      }
+
+      li > ul {
+        box-shadow: inset 0px 0px 15px 5px $custom-button-success-opacity;
+        border-radius: 0px;
+        margin: 0px;
+        padding: 1rem 0;
+
+        & > li {
+          padding: 0px;
+
+          & > a {
+            display: block;
+            padding: 10px 0 10px 20px;
+
+            &:hover,
+            &:focus {
+              background: var(--bs-gray-100);
+              color: $custom-button-success;
+            }
+          }
+        }
+      }
+    }
+
+    .noChild {
+      &::after {
+        content: none;
+      }
+
+      &:active,
+      &:focus {
+        background: rgba(48, 114, 101, 0.0784313725);
+      }
+    }
+  }
+
+  .closeBtn {
+    display: none;
+  }
+
+  //cover bootstrap settings START
+  //cover bootstrap settings START
+  //cover bootstrap settings START
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+  .accordion-button:not(.collapsed) {
+    color: inherit;
+    background: #30726514;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(/build/images/icons/chevron-down.svg);
+  }
+
+  //cover bootstrap settings END
+  //cover bootstrap settings END
+  //cover bootstrap settings END
+}
+
+// navber 整頁模式，寬度設定：
+$navbarWidth: 260px;
+
+// bootstrap XL
+@media (max-width: 1199.98px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: #000000a6;
+    border: 0;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    transition: 1s all;
+    // 初始關閉
+    width: 0;
+    margin-left: -$navbarWidth;
+
+    nav {
+      width: $navbarWidth;
+      background: white;
+      overflow-y: auto;
+      display: flex;
+      flex-grow: 1;
+
+      ul {
+        width: 100%;
+        margin-top: 2px;
+      }
+    }
+
+    .targetArea {
+      background: white;
+      width: $navbarWidth;
+      display: table;
+      margin-left: 0px;
+      padding-left: 1.2rem;
+    }
+
+    .closeBtn {
+      display: block;
+      width: $navbarWidth;
+      border-radius: 0;
+    }
+  }
+
+  #navbar.navbarOpen {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
+// bootstrap XL
+@media (min-width: 1200px) {
+  #navbar {
+    display: block !important;
+  }
+}
