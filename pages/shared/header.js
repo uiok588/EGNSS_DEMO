@@ -16,38 +16,38 @@ header = `
       <div class="menuDiv d-flex justify-content-xl-end">
         <!-- 開始RWD：xl以下出現 -->
         <button id="navbarOpen" class="btn btn-success mx-1 d-flex d-xl-none">
-          <img class="smImg" src="/build/images/icons/menu.svg" alt>
+          <img class="smImg" src="build/images/icons/menu.svg" alt>
           目錄
         </button>
         <!-- 結束RWD：xl以下出現 -->
 
         <!-- 開始：未登入出現 -->
         <button class="btn btn-primary ms-2">
-          <img class="smImg" src="/build/images/icons/user.svg" alt>
+          <img class="smImg" src="build/images/icons/user.svg" alt>
           會員登入
         </button>
         <button class="btn btn-primary ms-2">
-          <img class="smImg" src="/build/images/icons/add-friend.svg" alt>
+          <img class="smImg" src="build/images/icons/add-friend.svg" alt>
           會員註冊
         </button>
         <!-- 結束：未登入出現 -->
 
         <button class="btn btn-primary ms-2">
-          <img src="/build/images/icons/dollar.svg" alt>
+          <img src="build/images/icons/dollar.svg" alt>
           註冊繳費
         </button>
         <button class="btn btn-primary ms-2">
-          <img src="/build/images/icons/satelite.svg" alt>
+          <img src="build/images/icons/satelite.svg" alt>
           基準站資訊
         </button>
         <button class="btn btn-primary ms-2">
-          <img src="/build/images/icons/search.svg" alt>
+          <img src="build/images/icons/search.svg" alt>
           服務網情形
         </button>
 
         <!-- 開始：已登入出現 -->
         <button class="btn btn-warning ms-2">
-          <img src="/build/images/icons/logout.svg" alt>
+          <img src="build/images/icons/logout.svg" alt>
           登出
         </button>
         <!-- 結束：已登入出現 -->
