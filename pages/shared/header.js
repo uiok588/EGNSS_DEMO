@@ -10,7 +10,7 @@ header = `
     </div>
     <div class="container d-flex flex-column flex-xl-row justify-content-center justify-content-xl-between align-items-center p-3 py-4">
       <div class="logoDiv logoDiv__js d-flex align-items-center mb-4 mb-xl-0">
-        <img src="/build/images/logo.png" alt />
+        <img src="build/images/logo.png" alt />
         <h2 class="ms-3">e-GNSS<br />即時動態定位系統入口網站</h1>
       </div>
       <div class="menuDiv d-flex justify-content-xl-end">
