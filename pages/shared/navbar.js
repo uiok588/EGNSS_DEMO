@@ -28,13 +28,13 @@ navbar = `
             data-bs-parent="#pagesMenu"
           >
             <li>
-              <a class="accordion-body" href="/pages/index.html" title="">最新活動</a>
+              <a class="accordion-body" href="pages/index.html" title="">最新活動</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">活動訊息</a>
             </li>
             <li>
-              <a class="accordion-body" href="/pages/projectstatics.html" title="">統計數據</a>
+              <a class="accordion-body" href="pages/projectstatics.html" title="">統計數據</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">網站導覽</a>
@@ -59,7 +59,7 @@ navbar = `
             data-bs-parent="#pagesMenu"
           >
             <li>
-              <a class="accordion-body" href="/pages/mbr_info.html" title="">修改會員資料</a>
+              <a class="accordion-body" href="pages/mbr_info.html" title="">修改會員資料</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">帳務與繳費</a>
@@ -131,7 +131,7 @@ navbar = `
             data-bs-parent="#pagesMenu"
           >
             <li>
-              <a class="accordion-body" href="/pages/content01.html" title="">何謂e-GNSS</a>
+              <a class="accordion-body" href="pages/content01.html" title="">何謂e-GNSS</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">e-GNSS特性與優點</a>
@@ -140,7 +140,7 @@ navbar = `
               <a class="accordion-body" href="#" title="">e-GNSS的組成</a>
             </li>
             <li>
-              <a class="accordion-body" href="/pages/content04.html" title="">系統營運大事記</a>
+              <a class="accordion-body" href="pages/content04.html" title="">系統營運大事記</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">e-GNSS坐標系統</a>
@@ -161,7 +161,7 @@ navbar = `
               <a class="accordion-body" href="#" title="">e-GNSS應用與加值</a>
             </li>
             <li>
-              <a class="accordion-body" href="/pages/content11.html" title="">現行收費標準</a>
+              <a class="accordion-body" href="pages/content11.html" title="">現行收費標準</a>
             </li>
           </ul>
         </li>
@@ -174,7 +174,7 @@ navbar = `
             data-bs-target="#relatedSitesPages"
             aria-expanded="false"
             aria-controls="relatedSitesPages"
-            onclick="location.href='/pages/relatedSites.html'"
+            onclick="location.href='pages/relatedSites.html'"
           >
             相關網站
           </button>
