@@ -155,7 +155,7 @@ navbar = `
               <a class="accordion-body" href="#" title="">年度營運報告</a>
             </li>
             <li>
-              <a class="accordion-body" href="/pages/qanda.html" title="">問與答</a>
+              <a class="accordion-body" href="pages/qanda.html" title="">問與答</a>
             </li>
             <li>
               <a class="accordion-body" href="#" title="">e-GNSS應用與加值</a>
