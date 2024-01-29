@@ -1,7 +1,7 @@
 javascipt = `
-  <script src="/lib/bootstrap-5.3.0-alpha1-dist/js/popper.min.js"></script>
-  <script src="/lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
-  <script src="/lib/jquery-3.6.3/jquery.js"></script>
+  <script src="lib/bootstrap-5.3.0-alpha1-dist/js/popper.min.js"></script>
+  <script src="lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <script src="lib/jquery-3.6.3/jquery.js"></script>
 
   <script>
     // 滾動監聽
